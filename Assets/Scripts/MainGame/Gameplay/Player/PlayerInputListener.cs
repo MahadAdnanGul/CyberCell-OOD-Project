@@ -1,65 +1,66 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Mahad.GameConstants;
+using MainGame.GameConstants;
+using MainGame.GameManagers;
 using UnityEngine;
-using static MahadLibShortcuts;
+using static MainGame.Singletons.MahadLibShortcuts;
 
-public class PlayerInputListener : MonoBehaviour
+namespace MainGame.Gameplay.Player
 {
-    private void Update()
+    public class PlayerInputListener : MonoBehaviour
     {
-        if (Input.GetKey(KeyCode.A))
+        private void Update()
         {
-            Get<ServiceLocator>().inputEventManager.onMoveInputEvent?.Invoke(Direction.Left);
-        }
-        else if (Input.GetKey(KeyCode.D))
-        {
-            Get<ServiceLocator>().inputEventManager.onMoveInputEvent?.Invoke(Direction.Right);
-        }
+            if (Input.GetKey(KeyCode.A))
+            {
+                Get<ServiceLocator>().inputEventManager.onMoveInputEvent?.Invoke(Direction.Left);
+            }
+            else if (Input.GetKey(KeyCode.D))
+            {
+                Get<ServiceLocator>().inputEventManager.onMoveInputEvent?.Invoke(Direction.Right);
+            }
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Get<ServiceLocator>().inputEventManager.onJumpEvent?.Invoke();
-        }
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Get<ServiceLocator>().inputEventManager.onJumpEvent?.Invoke();
+            }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            Get<ServiceLocator>().inputEventManager.onDashEvent?.Invoke();
-        }
+            if (Input.GetKeyDown(KeyCode.LeftShift))
+            {
+                Get<ServiceLocator>().inputEventManager.onDashEvent?.Invoke();
+            }
 
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            Get<ServiceLocator>().inputEventManager.onShootEvent?.Invoke();
-        }
+            if (Input.GetKeyDown(KeyCode.Return))
+            {
+                Get<ServiceLocator>().inputEventManager.onShootEvent?.Invoke();
+            }
 
-        if (Input.GetKeyDown(KeyCode.RightShift))
-        {
-            Get<ServiceLocator>().inputEventManager.onMeleeEvent?.Invoke();
-        }
+            if (Input.GetKeyDown(KeyCode.RightShift))
+            {
+                Get<ServiceLocator>().inputEventManager.onMeleeEvent?.Invoke();
+            }
         
         
 
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            Get<ServiceLocator>().inputEventManager.onSuperEvent?.Invoke();
-        }
+            if (Input.GetKeyDown(KeyCode.X))
+            {
+                Get<ServiceLocator>().inputEventManager.onSuperEvent?.Invoke();
+            }
 
-        if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            if (Input.GetKeyDown(KeyCode.Alpha1))
+            if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3))
             {
-                Get<ServiceLocator>().inputEventManager.onItemSlotEvent?.Invoke(1);
+                if (Input.GetKeyDown(KeyCode.Alpha1))
+                {
+                    Get<ServiceLocator>().inputEventManager.onItemSlotEvent?.Invoke(1);
+                }
+                else if (Input.GetKeyDown(KeyCode.Alpha2))
+                {
+                    Get<ServiceLocator>().inputEventManager.onItemSlotEvent?.Invoke(2);
+                }
+                else
+                {
+                    Get<ServiceLocator>().inputEventManager.onItemSlotEvent?.Invoke(3);
+                }
             }
-            else if (Input.GetKeyDown(KeyCode.Alpha2))
-            {
-                Get<ServiceLocator>().inputEventManager.onItemSlotEvent?.Invoke(2);
-            }
-            else
-            {
-                Get<ServiceLocator>().inputEventManager.onItemSlotEvent?.Invoke(3);
-            }
-        }
         
+        }
     }
 }

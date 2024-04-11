@@ -3,14 +3,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyBullet : Bullet
+namespace MainGame.Gameplay
 {
-    protected override void OnCollisionEnter2D(Collision2D other)
+    public class EnemyBullet : Bullet
     {
-        base.OnCollisionEnter2D(other);
-        if (!other.gameObject.CompareTag("Player"))
+        protected override void OnCollisionEnter2D(Collision2D other)
         {
-            Destroy(gameObject);
+            base.OnCollisionEnter2D(other);
+            if (!other.gameObject.CompareTag("Player"))
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }
+

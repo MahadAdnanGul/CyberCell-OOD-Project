@@ -1,21 +1,20 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using MahadLib;
-using static MahadLibShortcuts;
+using static MainGame.Singletons.MahadLibShortcuts;
 
-[DefaultExecutionOrder(-1)]
-[RequireComponent(typeof(InputEventManager),typeof(UIEventsManager))]
-public class ServiceLocator : MonoBehaviour
+namespace MainGame.GameManagers
 {
-    [HideInInspector] public InputEventManager inputEventManager;
-    [HideInInspector] public UIEventsManager uiEventsManager;
-    private void Awake()
+    [DefaultExecutionOrder(-1)]
+    [RequireComponent(typeof(InputEventManager),typeof(UIEventsManager))]
+    public class ServiceLocator : MonoBehaviour
     {
-        InitSingleton(this);
-        inputEventManager = GetComponent<InputEventManager>();
-        uiEventsManager = GetComponent<UIEventsManager>();
-    }
+        [HideInInspector] public InputEventManager inputEventManager;
+        [HideInInspector] public UIEventsManager uiEventsManager;
+        private void Awake()
+        {
+            InitSingleton(this);
+            inputEventManager = GetComponent<InputEventManager>();
+            uiEventsManager = GetComponent<UIEventsManager>();
+        }
         
+    }
 }

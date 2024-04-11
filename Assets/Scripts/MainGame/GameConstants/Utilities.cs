@@ -1,5 +1,5 @@
 
-namespace Mahad.GameConstants
+namespace MainGame.GameConstants
 {
     public static class Utilities 
     {

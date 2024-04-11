@@ -1,197 +1,201 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using Mahad.GameConstants;
+using MainGame.CharacterEffects;
+using MainGame.GameConstants;
+using MainGame.GameManagers;
+using MainGame.Interfaces;
 using UnityEngine;
-using static MahadLibShortcuts;
+using static MainGame.Singletons.MahadLibShortcuts;
 
-public class Player : MonoBehaviour, ISubscriber, IDamagable
+namespace MainGame.Gameplay.Player
 {
-    [SerializeField] private float damageCooldown = 2f;
-    [SerializeField] private float playerShotCooldown = 2f;
-    private bool isInvulnerable = false;
-    private int health = 4;
-    private int superMeter = 0;
-    [SerializeField] Shooter shooter;
-    [SerializeField] private SuperAttack superAttack;
-    [SerializeField] private PlayerMovementController movement;
-    [SerializeField] private MeleeAttackHandler meleeHandler;
-    [SerializeField] private InvulnerabilityEffect invulnerabilityEffect;
-
-    private PlayerAnimationController animController;
-
-
-    private float timeElapsed = 0;
-    private bool canPlayerShoot = true;
-    private bool isWeaponUpgraded = false;
-
-    private void Awake()
+    public class Player : MonoBehaviour, ISubscriber, IDamagable
     {
-        animController = GetComponent<PlayerAnimationController>();
-    }
+        [SerializeField] private float damageCooldown = 2f;
+        [SerializeField] private float playerShotCooldown = 2f;
+        private bool isInvulnerable = false;
+        private int health = 4;
+        private int superMeter = 0;
+        [SerializeField] Shooter shooter;
+        [SerializeField] private SuperAttack superAttack;
+        [SerializeField] private PlayerMovementController movement;
+        [SerializeField] private MeleeAttackHandler meleeHandler;
+        [SerializeField] private InvulnerabilityEffect invulnerabilityEffect;
 
-    private void Start()
-    {
-        Get<ServiceLocator>().uiEventsManager.onInitializeHud?.Invoke(health);
-    }
-    
-    private void Update()
-    {
-        if (!canPlayerShoot)
+        private PlayerAnimationController animController;
+
+
+        private float timeElapsed = 0;
+        private bool canPlayerShoot = true;
+        private bool isWeaponUpgraded = false;
+
+        private void Awake()
         {
-            timeElapsed += Time.deltaTime;
-            if (timeElapsed >= playerShotCooldown)
+            animController = GetComponent<PlayerAnimationController>();
+        }
+
+        private void Start()
+        {
+            Get<ServiceLocator>().uiEventsManager.onInitializeHud?.Invoke(health);
+        }
+    
+        private void Update()
+        {
+            if (!canPlayerShoot)
             {
-                timeElapsed = 0;
-                canPlayerShoot = true;
+                timeElapsed += Time.deltaTime;
+                if (timeElapsed >= playerShotCooldown)
+                {
+                    timeElapsed = 0;
+                    canPlayerShoot = true;
+                }
             }
         }
-    }
 
-    private void WeaponUpgrade(float duration)
-    {
-        if (!isWeaponUpgraded)
+        private void WeaponUpgrade(float duration)
         {
-            isWeaponUpgraded = true;
-            StartCoroutine(UpgradeRoutine(duration, playerShotCooldown));
-            playerShotCooldown = 0.25f;
+            if (!isWeaponUpgraded)
+            {
+                isWeaponUpgraded = true;
+                StartCoroutine(UpgradeRoutine(duration, playerShotCooldown));
+                playerShotCooldown = 0.25f;
+            }
         }
-    }
 
-    private IEnumerator UpgradeRoutine(float duration, float originalValue)
-    {
-        yield return new WaitForSeconds(duration);
-        playerShotCooldown = originalValue;
-        isWeaponUpgraded = false;
-    }
-
-    private void Shoot()
-    {
-        if (canPlayerShoot)
+        private IEnumerator UpgradeRoutine(float duration, float originalValue)
         {
-            bool isChanged = animController.SetAnimation("Shoot");
+            yield return new WaitForSeconds(duration);
+            playerShotCooldown = originalValue;
+            isWeaponUpgraded = false;
+        }
+
+        private void Shoot()
+        {
+            if (canPlayerShoot)
+            {
+                bool isChanged = animController.SetAnimation("Shoot");
+                if (isChanged)
+                {
+                    FreezeUnfreezeAnimations();
+                }
+            
+                shooter.Shoot(new Vector2(Utilities.DirectionToInt(movement.PlayerDirection),0));
+                canPlayerShoot = false;
+                timeElapsed = 0;
+            }
+        }
+
+        private void FreezeUnfreezeAnimations()
+        {
+            movement.ToggleFreezeAnimations(true);
+            Invoke(nameof(UnfreezeAnimations),animController.GetCurrentAnimationDuration());
+        }
+
+        private void UseSuperAttack()
+        {
+            if (superMeter >= 5)
+            {
+                Get<ServiceLocator>().uiEventsManager.onSuperUsed?.Invoke();
+                superMeter = 0;
+                superAttack.Shoot(new Vector2(Utilities.DirectionToInt(movement.PlayerDirection),0));
+            }
+        }
+
+        private void MeleeAttack()
+        {
+            meleeHandler.MeleeAttack();
+            bool isChanged = animController.SetAnimation("RunAttack");
             if (isChanged)
             {
                 FreezeUnfreezeAnimations();
             }
-            
-            shooter.Shoot(new Vector2(Utilities.DirectionToInt(movement.PlayerDirection),0));
-            canPlayerShoot = false;
-            timeElapsed = 0;
         }
-    }
 
-    private void FreezeUnfreezeAnimations()
-    {
-        movement.ToggleFreezeAnimations(true);
-        Invoke(nameof(UnfreezeAnimations),animController.GetCurrentAnimationDuration());
-    }
-
-    private void UseSuperAttack()
-    {
-        if (superMeter >= 5)
+        private void UnfreezeAnimations()
         {
-            Get<ServiceLocator>().uiEventsManager.onSuperUsed?.Invoke();
-            superMeter = 0;
-            superAttack.Shoot(new Vector2(Utilities.DirectionToInt(movement.PlayerDirection),0));
+            movement.ToggleFreezeAnimations(false);
         }
-    }
-
-    private void MeleeAttack()
-    {
-        meleeHandler.MeleeAttack();
-        bool isChanged = animController.SetAnimation("RunAttack");
-        if (isChanged)
+        public void SubscribeEvents()
         {
-            FreezeUnfreezeAnimations();
+            Get<ServiceLocator>().inputEventManager.onShootEvent += Shoot;
+            Get<ServiceLocator>().inputEventManager.onMeleeEvent += MeleeAttack;
+            Get<ServiceLocator>().inputEventManager.onSuperEvent += UseSuperAttack;
+            Get<ServiceLocator>().uiEventsManager.onEnemyDamaged += IncrementSuper;
+            Get<ServiceLocator>().uiEventsManager.onHealed += HealPlayer;
+            Get<ServiceLocator>().uiEventsManager.onInvincible += Invincibility;
+            Get<ServiceLocator>().uiEventsManager.onWeaponUpgrade += WeaponUpgrade;
         }
-    }
 
-    private void UnfreezeAnimations()
-    {
-        movement.ToggleFreezeAnimations(false);
-    }
-    public void SubscribeEvents()
-    {
-        Get<ServiceLocator>().inputEventManager.onShootEvent += Shoot;
-        Get<ServiceLocator>().inputEventManager.onMeleeEvent += MeleeAttack;
-        Get<ServiceLocator>().inputEventManager.onSuperEvent += UseSuperAttack;
-        Get<ServiceLocator>().uiEventsManager.onEnemyDamaged += IncrementSuper;
-        Get<ServiceLocator>().uiEventsManager.onHealed += HealPlayer;
-        Get<ServiceLocator>().uiEventsManager.onInvincible += Invincibility;
-        Get<ServiceLocator>().uiEventsManager.onWeaponUpgrade += WeaponUpgrade;
-    }
-
-    public void UnsubscribeEvents()
-    {
-        Get<ServiceLocator>().inputEventManager.onShootEvent -= Shoot;
-        Get<ServiceLocator>().inputEventManager.onMeleeEvent -= MeleeAttack;
-        Get<ServiceLocator>().inputEventManager.onSuperEvent -= UseSuperAttack;
-        Get<ServiceLocator>().uiEventsManager.onEnemyDamaged -= IncrementSuper;
-        Get<ServiceLocator>().uiEventsManager.onHealed -= HealPlayer;
-        Get<ServiceLocator>().uiEventsManager.onInvincible -= Invincibility;
-        Get<ServiceLocator>().uiEventsManager.onWeaponUpgrade -= WeaponUpgrade;
-    }
-
-    private void IncrementSuper(int amount)
-    {
-        superMeter += amount;
-    }
-
-    private IEnumerator GetHitRoutine(float time)
-    {
-        if (isInvulnerable)
+        public void UnsubscribeEvents()
         {
-            yield break;
+            Get<ServiceLocator>().inputEventManager.onShootEvent -= Shoot;
+            Get<ServiceLocator>().inputEventManager.onMeleeEvent -= MeleeAttack;
+            Get<ServiceLocator>().inputEventManager.onSuperEvent -= UseSuperAttack;
+            Get<ServiceLocator>().uiEventsManager.onEnemyDamaged -= IncrementSuper;
+            Get<ServiceLocator>().uiEventsManager.onHealed -= HealPlayer;
+            Get<ServiceLocator>().uiEventsManager.onInvincible -= Invincibility;
+            Get<ServiceLocator>().uiEventsManager.onWeaponUpgrade -= WeaponUpgrade;
         }
-        isInvulnerable = true;
 
-        yield return new WaitForSeconds(time);
-
-        isInvulnerable = false;
-    }
-
-    public void TakeDamage(int amount)
-    {
-        if (!isInvulnerable)
+        private void IncrementSuper(int amount)
         {
-            health -= amount;
-            if (health <= 0)
+            superMeter += amount;
+        }
+
+        private IEnumerator GetHitRoutine(float time)
+        {
+            if (isInvulnerable)
             {
-                health = 0;
-                Get<ServiceLocator>().uiEventsManager.onGameOver?.Invoke();
+                yield break;
             }
-            Get<ServiceLocator>().uiEventsManager.onDamageTaken?.Invoke(amount);
-            Invincibility(damageCooldown);
+            isInvulnerable = true;
+
+            yield return new WaitForSeconds(time);
+
+            isInvulnerable = false;
         }
-    }
 
-    private void Invincibility(float time)
-    {
-        invulnerabilityEffect.PlayEffect(time);
-        StartCoroutine(GetHitRoutine(time));
-    }
-
-    public void HealPlayer(int amount)
-    {
-        health += amount;
-    }
-
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag("Bullet"))
+        public void TakeDamage(int amount)
         {
-            TakeDamage(other.gameObject.GetComponent<Bullet>().Damage);
+            if (!isInvulnerable)
+            {
+                health -= amount;
+                if (health <= 0)
+                {
+                    health = 0;
+                    Get<ServiceLocator>().uiEventsManager.onGameOver?.Invoke();
+                }
+                Get<ServiceLocator>().uiEventsManager.onDamageTaken?.Invoke(amount);
+                Invincibility(damageCooldown);
+            }
         }
-    }
 
-    private void OnEnable()
-    {
-        SubscribeEvents();
-    }
+        private void Invincibility(float time)
+        {
+            invulnerabilityEffect.PlayEffect(time);
+            StartCoroutine(GetHitRoutine(time));
+        }
 
-    private void OnDisable()
-    {
-        UnsubscribeEvents();
+        public void HealPlayer(int amount)
+        {
+            health += amount;
+        }
+
+        private void OnCollisionEnter2D(Collision2D other)
+        {
+            if (other.gameObject.CompareTag("Bullet"))
+            {
+                TakeDamage(other.gameObject.GetComponent<Bullet>().Damage);
+            }
+        }
+
+        private void OnEnable()
+        {
+            SubscribeEvents();
+        }
+
+        private void OnDisable()
+        {
+            UnsubscribeEvents();
+        }
     }
 }

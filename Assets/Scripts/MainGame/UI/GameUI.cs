@@ -1,43 +1,45 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using MainGame.GameManagers;
+using MainGame.Interfaces;
 using UnityEngine;
-using static Shortcuts;
+using static MainGame.Singletons.Shortcuts;
 
-public class GameUI : MonoBehaviour, ISubscriber
+namespace MainGame.UI
 {
-    [SerializeField] private GameObject gameOver;
-    [SerializeField] private GameObject gameWon;
-
-    private void OnEnable()
+    public class GameUI : MonoBehaviour, ISubscriber
     {
-        SubscribeEvents();
-    }
+        [SerializeField] private GameObject gameOver;
+        [SerializeField] private GameObject gameWon;
 
-    private void OnDisable()
-    {
-        UnsubscribeEvents();
-    }
+        private void OnEnable()
+        {
+            SubscribeEvents();
+        }
 
-    private void GameOver()
-    {
-        gameOver.SetActive(true);
-    }
+        private void OnDisable()
+        {
+            UnsubscribeEvents();
+        }
 
-    private void GameWon()
-    {
-        gameWon.SetActive(true);
-    }
+        private void GameOver()
+        {
+            gameOver.SetActive(true);
+        }
 
-    public void SubscribeEvents()
-    {
-        Get<ServiceLocator>().uiEventsManager.onGameOver += GameOver;
-        Get<ServiceLocator>().uiEventsManager.onGameWon += GameWon;
-    }
+        private void GameWon()
+        {
+            gameWon.SetActive(true);
+        }
 
-    public void UnsubscribeEvents()
-    {
-        Get<ServiceLocator>().uiEventsManager.onGameOver -= GameOver;
-        Get<ServiceLocator>().uiEventsManager.onGameWon -= GameWon;
+        public void SubscribeEvents()
+        {
+            Get<ServiceLocator>().uiEventsManager.onGameOver += GameOver;
+            Get<ServiceLocator>().uiEventsManager.onGameWon += GameWon;
+        }
+
+        public void UnsubscribeEvents()
+        {
+            Get<ServiceLocator>().uiEventsManager.onGameOver -= GameOver;
+            Get<ServiceLocator>().uiEventsManager.onGameWon -= GameWon;
+        }
     }
 }

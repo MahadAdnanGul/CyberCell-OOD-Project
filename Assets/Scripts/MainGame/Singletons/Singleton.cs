@@ -1,12 +1,8 @@
 using System.Runtime.CompilerServices;
-using UnityEngine;
-using Object = UnityEngine.Object;
-#if UNITY_EDITOR
 using UnityEditor;
-#endif
-using MahadLib;
+using UnityEngine;
 
-namespace MahadLib
+namespace MainGame.Singletons
 {
     /// <summary>
     /// Singleton class allowing to create singleton of basically anything
@@ -130,44 +126,44 @@ namespace MahadLib
         }
 #endif
     }
-}
-
-/// <summary>
-/// Helper class for singleton access
-/// </summary>
-public static partial class MahadLibShortcuts
-{
-    /// <summary>
-    /// Get singleton
-    /// </summary>
-    /// <typeparam name="T">Singleton type</typeparam>
-    /// <returns>Singleton instance</returns>
-    public static T Get<T>() where T : class
-    {
-        return Singleton<T>.Instance;
-    }
 
     /// <summary>
-    /// Init singleton with the instance
+    /// Helper class for singleton access
     /// </summary>
-    /// <param name="instance">Instance to set as singleton</param>
-    /// <typeparam name="T">Type of singleton</typeparam>
-    public static void InitSingleton<T>(T instance, bool resetExisting = false) where T : class
+    public static partial class MahadLibShortcuts
     {
-        if (resetExisting)
+        /// <summary>
+        /// Get singleton
+        /// </summary>
+        /// <typeparam name="T">Singleton type</typeparam>
+        /// <returns>Singleton instance</returns>
+        public static T Get<T>() where T : class
         {
-            Singleton<T>.Reset();
+            return Singleton<T>.Instance;
         }
-        Singleton<T>.Initialise(instance);
-    }
+
+        /// <summary>
+        /// Init singleton with the instance
+        /// </summary>
+        /// <param name="instance">Instance to set as singleton</param>
+        /// <typeparam name="T">Type of singleton</typeparam>
+        public static void InitSingleton<T>(T instance, bool resetExisting = false) where T : class
+        {
+            if (resetExisting)
+            {
+                Singleton<T>.Reset();
+            }
+            Singleton<T>.Initialise(instance);
+        }
 	
-    /// <summary>
-    /// Check is singleton is set
-    /// </summary>
-    /// <typeparam name="T">Type of singleton</typeparam>
-    /// <returns>True if singleton exists, false otherwise</returns>
-	public static bool IsSingletonSet<T>() where T : class
-    {
-        return Singleton<T>.Exists;
+        /// <summary>
+        /// Check is singleton is set
+        /// </summary>
+        /// <typeparam name="T">Type of singleton</typeparam>
+        /// <returns>True if singleton exists, false otherwise</returns>
+        public static bool IsSingletonSet<T>() where T : class
+        {
+            return Singleton<T>.Exists;
+        }
     }
 }

@@ -1,13 +1,14 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using MainGame.GameManagers;
 using UnityEngine;
-using static Shortcuts;
+using static MainGame.Singletons.Shortcuts;
 
-public class DeadZon : MonoBehaviour
+namespace MainGame
 {
-    private void OnTriggerEnter2D(Collider2D other)
+    public class DeadZon : MonoBehaviour
     {
-        Get<ServiceLocator>().uiEventsManager.onGameOver?.Invoke();
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            Get<ServiceLocator>().uiEventsManager.onGameOver?.Invoke();
+        }
     }
 }

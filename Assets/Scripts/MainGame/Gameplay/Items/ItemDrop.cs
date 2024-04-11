@@ -1,30 +1,31 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using MainGame.Gameplay.Player;
 using UnityEngine;
 
-public class ItemDrop : MonoBehaviour
+namespace MainGame.Gameplay.Items
 {
-    [SerializeField] private Item item;
-    private SpriteRenderer spriteRenderer;
-
-
-    private void Awake()
+    public class ItemDrop : MonoBehaviour
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
-    }
+        [SerializeField] private Item item;
+        private SpriteRenderer spriteRenderer;
 
-    private void OnEnable()
-    {
-        spriteRenderer.sprite = item.sprite;
-    }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.GetComponent<PlayerInventory>() != null)
+        private void Awake()
         {
-            other.GetComponent<PlayerInventory>().AddItem(item);
-            Destroy(gameObject);
+            spriteRenderer = GetComponent<SpriteRenderer>();
+        }
+
+        private void OnEnable()
+        {
+            spriteRenderer.sprite = item.sprite;
+        }
+
+        private void OnTriggerEnter2D(Collider2D other)
+        {
+            if (other.GetComponent<PlayerInventory>() != null)
+            {
+                other.GetComponent<PlayerInventory>().AddItem(item);
+                Destroy(gameObject);
+            }
         }
     }
 }

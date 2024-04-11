@@ -1,8 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class JackedEnemy : Enemy
+namespace MainGame.Gameplay.Enemy
 {
+    public class JackedEnemy : Enemy
+    {
    
+    }
 }

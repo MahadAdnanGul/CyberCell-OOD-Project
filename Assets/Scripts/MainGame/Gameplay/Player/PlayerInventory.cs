@@ -1,61 +1,64 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using MainGame.GameManagers;
+using MainGame.Gameplay.Items;
+using MainGame.Interfaces;
 using UnityEngine;
-using static Shortcuts;
-public class PlayerInventory : MonoBehaviour, ISubscriber
+using static MainGame.Singletons.Shortcuts;
+namespace MainGame.Gameplay.Player
 {
-    private Item[] items;
-    [SerializeField] private int maxItemSlots = 3;
-
-    private void OnEnable()
+    public class PlayerInventory : MonoBehaviour, ISubscriber
     {
-        SubscribeEvents();
-    }
+        private Item[] items;
+        [SerializeField] private int maxItemSlots = 3;
 
-    private void OnDisable()
-    {
-        UnsubscribeEvents();
-    }
-
-    private void Start()
-    {
-        items = new Item[maxItemSlots];
-    }
-
-    public void ConsumeItem(int index)
-    {
-        if (items[index-1] != null)
+        private void OnEnable()
         {
-            Get<ServiceLocator>().uiEventsManager.onItemConsumed?.Invoke(index-1);
-            items[index-1].UseItem();
-            items[index-1] = null;
-            
+            SubscribeEvents();
         }
-    }
 
-    public void AddItem(Item item)
-    {
-        int availableIndex;
-        for (int i = 0; i < items.Length; i++)
+        private void OnDisable()
         {
-            if (items[i] == null)
+            UnsubscribeEvents();
+        }
+
+        private void Start()
+        {
+            items = new Item[maxItemSlots];
+        }
+
+        public void ConsumeItem(int index)
+        {
+            if (items[index-1] != null)
             {
-                availableIndex = i;
-                items[availableIndex] = item;
-                Get<ServiceLocator>().uiEventsManager.onItemAdded?.Invoke(item.sprite,availableIndex);
-                return;
+                Get<ServiceLocator>().uiEventsManager.onItemConsumed?.Invoke(index-1);
+                items[index-1].UseItem();
+                items[index-1] = null;
+            
             }
         }
-    }
 
-    public void SubscribeEvents()
-    {
-        Get<ServiceLocator>().inputEventManager.onItemSlotEvent += ConsumeItem;
-    }
+        public void AddItem(Item item)
+        {
+            int availableIndex;
+            for (int i = 0; i < items.Length; i++)
+            {
+                if (items[i] == null)
+                {
+                    availableIndex = i;
+                    items[availableIndex] = item;
+                    Get<ServiceLocator>().uiEventsManager.onItemAdded?.Invoke(item.sprite,availableIndex);
+                    return;
+                }
+            }
+        }
 
-    public void UnsubscribeEvents()
-    {
-        Get<ServiceLocator>().inputEventManager.onItemSlotEvent -= ConsumeItem;
+        public void SubscribeEvents()
+        {
+            Get<ServiceLocator>().inputEventManager.onItemSlotEvent += ConsumeItem;
+        }
+
+        public void UnsubscribeEvents()
+        {
+            Get<ServiceLocator>().inputEventManager.onItemSlotEvent -= ConsumeItem;
+        }
     }
 }

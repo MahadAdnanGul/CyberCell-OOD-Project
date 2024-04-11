@@ -1,7 +1,10 @@
 
-public interface ISubscriber
+namespace MainGame.Interfaces
 {
-    public void SubscribeEvents();
+    public interface ISubscriber
+    {
+        public void SubscribeEvents();
 
-    public void UnsubscribeEvents();
+        public void UnsubscribeEvents();
+    }
 }

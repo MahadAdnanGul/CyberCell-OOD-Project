@@ -1,44 +1,46 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using MainGame.GameManagers;
+using MainGame.Interfaces;
 using UnityEngine;
 using UnityEngine.UI;
-using static Shortcuts;
-public class InventoryUI : MonoBehaviour, ISubscriber
+using static MainGame.Singletons.Shortcuts;
+namespace MainGame.UI
 {
-    [SerializeField] private Image[] slotItems;
-
-    private void OnEnable()
+    public class InventoryUI : MonoBehaviour, ISubscriber
     {
-        SubscribeEvents();
-    }
+        [SerializeField] private Image[] slotItems;
 
-    private void OnDisable()
-    {
-        UnsubscribeEvents();
-    }
+        private void OnEnable()
+        {
+            SubscribeEvents();
+        }
 
-    private void AddItem(Sprite sprite, int index)
-    {
-        slotItems[index].sprite = sprite;
-        slotItems[index].gameObject.SetActive(true);
-    }
+        private void OnDisable()
+        {
+            UnsubscribeEvents();
+        }
 
-    private void ConsumeItem(int index)
-    {
-        slotItems[index].sprite = null;
-        slotItems[index].gameObject.SetActive(false);
-    }
+        private void AddItem(Sprite sprite, int index)
+        {
+            slotItems[index].sprite = sprite;
+            slotItems[index].gameObject.SetActive(true);
+        }
 
-    public void SubscribeEvents()
-    {
-        Get<ServiceLocator>().uiEventsManager.onItemAdded += AddItem;
-        Get<ServiceLocator>().uiEventsManager.onItemConsumed += ConsumeItem;
-    }
+        private void ConsumeItem(int index)
+        {
+            slotItems[index].sprite = null;
+            slotItems[index].gameObject.SetActive(false);
+        }
 
-    public void UnsubscribeEvents()
-    {
-        Get<ServiceLocator>().uiEventsManager.onItemAdded -= AddItem;
-        Get<ServiceLocator>().uiEventsManager.onItemConsumed -= ConsumeItem;
+        public void SubscribeEvents()
+        {
+            Get<ServiceLocator>().uiEventsManager.onItemAdded += AddItem;
+            Get<ServiceLocator>().uiEventsManager.onItemConsumed += ConsumeItem;
+        }
+
+        public void UnsubscribeEvents()
+        {
+            Get<ServiceLocator>().uiEventsManager.onItemAdded -= AddItem;
+            Get<ServiceLocator>().uiEventsManager.onItemConsumed -= ConsumeItem;
+        }
     }
 }

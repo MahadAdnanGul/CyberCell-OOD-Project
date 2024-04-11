@@ -1,22 +1,23 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using MainGame.Gameplay.Player;
 using UnityEngine;
 
-public class FlyingEnemy : Enemy
+namespace MainGame.Gameplay.Enemy
 {
-    [SerializeField] private Shooter shooter;
-    [SerializeField] private float shootCooldown;
-    private float timeElapsed = 0;
-
-
-    private void Update()
+    public class FlyingEnemy : Enemy
     {
-        timeElapsed += Time.deltaTime;
-        if (timeElapsed >= shootCooldown)
+        [SerializeField] private Shooter shooter;
+        [SerializeField] private float shootCooldown;
+        private float timeElapsed = 0;
+
+
+        private void Update()
         {
-            timeElapsed = 0;
-            shooter.Shoot(new Vector2(0,-1));
+            timeElapsed += Time.deltaTime;
+            if (timeElapsed >= shootCooldown)
+            {
+                timeElapsed = 0;
+                shooter.Shoot(new Vector2(0,-1));
+            }
         }
     }
 }

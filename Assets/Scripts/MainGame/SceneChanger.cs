@@ -1,12 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneChanger : MonoBehaviour
+namespace MainGame
 {
-    public void RestartScene()
+    public class SceneChanger : MonoBehaviour
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        public void RestartScene()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 }

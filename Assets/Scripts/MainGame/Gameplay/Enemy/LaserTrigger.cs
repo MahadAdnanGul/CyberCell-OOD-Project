@@ -1,15 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class LaserTrigger : MonoBehaviour
+namespace MainGame.Gameplay.Enemy
 {
-    public int Damage = 1;
-    private void OnTriggerStay2D(Collider2D other)
+    public class LaserTrigger : MonoBehaviour
     {
-        if (other.gameObject.CompareTag("Player"))
+        public int Damage = 1;
+        private void OnTriggerStay2D(Collider2D other)
         {
-            other.gameObject.GetComponent<Player>().TakeDamage(Damage);
+            if (other.gameObject.CompareTag("Player"))
+            {
+                other.gameObject.GetComponent<Player.Player>().TakeDamage(Damage);
+            }
         }
     }
 }

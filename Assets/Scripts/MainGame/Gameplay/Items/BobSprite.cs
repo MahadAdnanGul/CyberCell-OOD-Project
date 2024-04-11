@@ -1,34 +1,36 @@
 using UnityEngine;
-using System.Collections;
 
-public class BobSprite : MonoBehaviour
+namespace MainGame.Gameplay.Items
 {
-    public float bobHeight = 0.5f; // Height of the bobbing motion
-    public float bobDuration = 1.0f; // Duration of one complete bob cycle
-    public bool startBobbingOnAwake = true; // Whether to start bobbing automatically when the script starts
-
-    private Vector3 originalPosition;
-
-    void Start()
+    public class BobSprite : MonoBehaviour
     {
-        originalPosition = transform.position;
+        public float bobHeight = 0.5f; // Height of the bobbing motion
+        public float bobDuration = 1.0f; // Duration of one complete bob cycle
+        public bool startBobbingOnAwake = true; // Whether to start bobbing automatically when the script starts
 
-        if (startBobbingOnAwake)
+        private Vector3 originalPosition;
+
+        void Start()
         {
-            StartBobbing();
+            originalPosition = transform.position;
+
+            if (startBobbingOnAwake)
+            {
+                StartBobbing();
+            }
         }
-    }
 
-    public void StartBobbing()
-    {
-        LeanTween.moveY(gameObject, originalPosition.y + bobHeight, bobDuration / 2f)
-            .setLoopPingPong(-1)
-            .setEaseInOutSine();
-    }
+        public void StartBobbing()
+        {
+            LeanTween.Framework.LeanTween.moveY(gameObject, originalPosition.y + bobHeight, bobDuration / 2f)
+                .setLoopPingPong(-1)
+                .setEaseInOutSine();
+        }
 
-    public void StopBobbing()
-    {
-        LeanTween.cancel(gameObject);
-        transform.position = originalPosition;
+        public void StopBobbing()
+        {
+            LeanTween.Framework.LeanTween.cancel(gameObject);
+            transform.position = originalPosition;
+        }
     }
 }

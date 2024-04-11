@@ -1,10 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Item : ScriptableObject
+namespace MainGame.Gameplay.Items
 {
-    public abstract void UseItem();
-    public Sprite sprite;
+    public abstract class Item : ScriptableObject
+    {
+        public abstract void UseItem();
+        public Sprite sprite;
     
+    }
 }

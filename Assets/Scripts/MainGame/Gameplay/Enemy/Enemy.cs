@@ -1,81 +1,82 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using MainGame.CharacterEffects;
+using MainGame.Interfaces;
 using UnityEngine;
-using static MahadLibShortcuts;
 
-[RequireComponent(typeof(BoxCollider2D))]
-public class Enemy : MonoBehaviour, ISubscriber, IDamagable
+namespace MainGame.Gameplay.Enemy
 {
-    [SerializeField] private float health = 5f;
-    [SerializeField] private float speed = 2f;
-    private BoxCollider2D collider;
-    [SerializeField] private int collisionDamage = 1;
-    [SerializeField] protected AIMovement aiMovement;
-    [SerializeField] private EnemyHurtEffect hurtEffect;
-    private bool isAlive;
-    public int CollisionDamage => collisionDamage;
-
-    protected virtual void Awake()
+    [RequireComponent(typeof(BoxCollider2D))]
+    public class Enemy : MonoBehaviour, ISubscriber, IDamagable
     {
-        collider = GetComponent<BoxCollider2D>();
-    }
+        [SerializeField] private float health = 5f;
+        [SerializeField] private float speed = 2f;
+        private BoxCollider2D collider;
+        [SerializeField] private int collisionDamage = 1;
+        [SerializeField] protected AIMovement.AIMovement aiMovement;
+        [SerializeField] private EnemyHurtEffect hurtEffect;
+        private bool isAlive;
+        public int CollisionDamage => collisionDamage;
 
-    private void OnEnable()
-    {
-        SubscribeEvents();
-    }
-
-    private void OnDisable()
-    {
-        UnsubscribeEvents();
-    }
-
-    protected virtual void FixedUpdate()
-    {
-        aiMovement.Move(speed);
-    }
-
-    public virtual void TakeDamage(int amount)
-    {
-        hurtEffect.PlayEffect();
-        health -= amount;
-        if (health <= 0)
+        protected virtual void Awake()
         {
-            isAlive = false;
-            Death();
+            collider = GetComponent<BoxCollider2D>();
         }
-    }
 
-    protected virtual void Death()
-    {
-        Destroy(gameObject);
-    }
+        private void OnEnable()
+        {
+            SubscribeEvents();
+        }
+
+        private void OnDisable()
+        {
+            UnsubscribeEvents();
+        }
+
+        protected virtual void FixedUpdate()
+        {
+            aiMovement.Move(speed);
+        }
+
+        public virtual void TakeDamage(int amount)
+        {
+            hurtEffect.PlayEffect();
+            health -= amount;
+            if (health <= 0)
+            {
+                isAlive = false;
+                Death();
+            }
+        }
+
+        protected virtual void Death()
+        {
+            Destroy(gameObject);
+        }
     
-    protected virtual void OnTriggerStay2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Player"))
+        protected virtual void OnTriggerStay2D(Collider2D other)
         {
-            other.gameObject.GetComponent<Player>().TakeDamage(CollisionDamage);
+            if (other.gameObject.CompareTag("Player"))
+            {
+                other.gameObject.GetComponent<Player.Player>().TakeDamage(CollisionDamage);
+            }
         }
-    }
 
-    protected virtual void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Bullet"))
+        protected virtual void OnTriggerEnter2D(Collider2D other)
         {
-            TakeDamage(other.gameObject.GetComponent<Bullet>().Damage);
-            other.GetComponent<Bullet>().DestroyBullet();
+            if (other.gameObject.CompareTag("Bullet"))
+            {
+                TakeDamage(other.gameObject.GetComponent<Bullet>().Damage);
+                other.GetComponent<Bullet>().DestroyBullet();
+            }
         }
-    }
 
-    public virtual void SubscribeEvents()
-    {
+        public virtual void SubscribeEvents()
+        {
        
-    }
+        }
 
-    public virtual void UnsubscribeEvents()
-    {
+        public virtual void UnsubscribeEvents()
+        {
         
+        }
     }
 }

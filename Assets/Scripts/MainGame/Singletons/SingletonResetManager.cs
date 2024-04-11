@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace MahadLib
+namespace MainGame.Singletons
 {
     public class SingletonResetManager
     {

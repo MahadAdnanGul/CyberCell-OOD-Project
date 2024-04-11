@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Mahad.GameConstants
+namespace MainGame.GameConstants
 {
     public class GameConstants : MonoBehaviour
     {
