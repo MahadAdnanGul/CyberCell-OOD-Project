@@ -8,14 +8,20 @@ Presentation: https://docs.google.com/presentation/d/1385mQSgVn3JX_64dsCFmFqkU3f
 
 Build: https://drive.google.com/drive/folders/1yicElzTdcgWH_R2_OYRRKinuuQWSrUwQ?usp=sharing
 
-Controls: 
+**Controls: **
 
 A,D keys for movement
+
 Space to jump
+
 LShift to dash
+
 Enter to Melee
+
 RShift to Shoot
+
 X to Super Attack
+
 up and down arrow to lookup/lookdown
 
 ------------------Part A----------------------------
