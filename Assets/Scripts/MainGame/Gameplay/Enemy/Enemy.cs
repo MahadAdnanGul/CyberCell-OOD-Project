@@ -9,7 +9,7 @@ namespace MainGame.Gameplay.Enemy
     {
         [SerializeField] private float health = 5f;
         [SerializeField] private float speed = 2f;
-        private BoxCollider2D collider;
+        private BoxCollider2D col;
         [SerializeField] private int collisionDamage = 1;
         [SerializeField] protected AIMovement.AIMovement aiMovement;
         [SerializeField] private EnemyHurtEffect hurtEffect;
@@ -18,7 +18,7 @@ namespace MainGame.Gameplay.Enemy
 
         protected virtual void Awake()
         {
-            collider = GetComponent<BoxCollider2D>();
+            col = GetComponent<BoxCollider2D>();
         }
 
         private void OnEnable()

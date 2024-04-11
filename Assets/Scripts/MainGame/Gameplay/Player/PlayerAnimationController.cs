@@ -9,8 +9,6 @@ namespace MainGame.Gameplay.Player
         private Animator animator;
         private string currentAnimation = "Idle";
 
-        private string attackAnimation = "RunAttack";
-
         private Dictionary<string, AnimationClip> clipDictionary = new Dictionary<string, AnimationClip>();
 
         private void InitializeAnimator()

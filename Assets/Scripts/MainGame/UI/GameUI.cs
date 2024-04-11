@@ -1,3 +1,4 @@
+using System;
 using MainGame.GameManagers;
 using MainGame.Interfaces;
 using UnityEngine;
@@ -15,6 +16,11 @@ namespace MainGame.UI
             SubscribeEvents();
         }
 
+        private void Start()
+        {
+            TogglePauseState(true);
+        }
+
         private void OnDisable()
         {
             UnsubscribeEvents();
@@ -23,11 +29,23 @@ namespace MainGame.UI
         private void GameOver()
         {
             gameOver.SetActive(true);
+            TogglePauseState(true);
         }
 
         private void GameWon()
         {
             gameWon.SetActive(true);
+            TogglePauseState(true);
+        }
+
+        public void QuitGame()
+        {
+            Application.Quit();
+        }
+
+        public void TogglePauseState(bool isPaused)
+        {
+            Time.timeScale = isPaused ? 0 : 1;
         }
 
         public void SubscribeEvents()
