@@ -1,0 +1,607 @@
+fileFormatVersion: 2
+guid: dd8c8090ed007df449ffa576cd46a39c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: boss enemy sprite sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3435
+        width: 1565
+        height: 1145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a6358bcf50403b4490f6af0f2f09723
+      internalID: 557885076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss enemy sprite sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 3435
+        width: 1565
+        height: 1145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe277a8567b8dbd4ca7af8faf258cb66
+      internalID: -676128906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss enemy sprite sheet_2
+      rect:
+        serializedVersion: 2
+        x: 3130
+        y: 3435
+        width: 1565
+        height: 1145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d8914329bdf524f80aba0520d773c3
+      internalID: 1184578385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss enemy sprite sheet_3
+      rect:
+        serializedVersion: 2
+        x: 4695
+        y: 3435
+        width: 1565
+        height: 1145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6436a0df17bacb4458313a7965515734
+      internalID: 427644968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss enemy sprite sheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2290
+        width: 1565
+        height: 1145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1ff01e7e0be6f4f9f67afa54fb7f36
+      internalID: 381448142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss enemy sprite sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 2290
+        width: 1565
+        height: 1145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c83ccf627d26b3408af18b7ac76a6c8
+      internalID: -742531107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss enemy sprite sheet_6
+      rect:
+        serializedVersion: 2
+        x: 3130
+        y: 2290
+        width: 1565
+        height: 1145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d499ffea2945b14f81856034161ec5b
+      internalID: 1646990436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss enemy sprite sheet_7
+      rect:
+        serializedVersion: 2
+        x: 4695
+        y: 2290
+        width: 1565
+        height: 1145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb4035dac5b4c4545a285cc698b232b2
+      internalID: -1543985736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss enemy sprite sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1145
+        width: 1565
+        height: 1145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 573b65d21542dfc4a8cff80271dff1fd
+      internalID: 1158446901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss enemy sprite sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 1145
+        width: 1565
+        height: 1145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84584d3143de0e945a4f15d8943260e9
+      internalID: -1579379588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss enemy sprite sheet_10
+      rect:
+        serializedVersion: 2
+        x: 3130
+        y: 1145
+        width: 1565
+        height: 1145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db0e1b614e14f7f49abc708a595d303d
+      internalID: 2144791205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss enemy sprite sheet_11
+      rect:
+        serializedVersion: 2
+        x: 4695
+        y: 1145
+        width: 1565
+        height: 1145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d4f1fb3a7951bd4eb71b7b656d64556
+      internalID: 2066499086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss enemy sprite sheet_12
+      rect:
+        serializedVersion: 2
+        x: 6260
+        y: 1145
+        width: 1565
+        height: 1145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d753530e97ae5f74089b28375a2694cd
+      internalID: 2097811333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss enemy sprite sheet_13
+      rect:
+        serializedVersion: 2
+        x: 7825
+        y: 1145
+        width: 1565
+        height: 1145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca7c70104fb660940ba4eb4cd8f2284c
+      internalID: 680830901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss enemy sprite sheet_14
+      rect:
+        serializedVersion: 2
+        x: 9390
+        y: 1145
+        width: 1565
+        height: 1145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b372bff997e8346b4228770dafb2b8
+      internalID: 1786846278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss enemy sprite sheet_15
+      rect:
+        serializedVersion: 2
+        x: 10955
+        y: 1145
+        width: 1565
+        height: 1145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f531cb835d78ec49b65aec02f840a9c
+      internalID: 1268942658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss enemy sprite sheet_16
+      rect:
+        serializedVersion: 2
+        x: 12520
+        y: 1145
+        width: 1565
+        height: 1145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d69327eb216644f98ec241b26c671a
+      internalID: -1859103571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss enemy sprite sheet_17
+      rect:
+        serializedVersion: 2
+        x: 14085
+        y: 1145
+        width: 1565
+        height: 1145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b763146381a04c4439287d8c76ceea93
+      internalID: -852568273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss enemy sprite sheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1565
+        height: 1145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea9de0560b8b914ab6362b048e66814
+      internalID: -897620011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss enemy sprite sheet_19
+      rect:
+        serializedVersion: 2
+        x: 1565
+        y: 0
+        width: 1565
+        height: 1145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 151b78a3d65dd3341b58b08f4e9896c4
+      internalID: 764083177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss enemy sprite sheet_20
+      rect:
+        serializedVersion: 2
+        x: 3130
+        y: 0
+        width: 1565
+        height: 1145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 661a915e5df211a48b17d9ed4c3b92c5
+      internalID: -1373492577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss enemy sprite sheet_21
+      rect:
+        serializedVersion: 2
+        x: 4695
+        y: 0
+        width: 1565
+        height: 1145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5148771864ca1f145b44956a7b7c8963
+      internalID: -629390607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      boss enemy sprite sheet_0: 557885076
+      boss enemy sprite sheet_1: -676128906
+      boss enemy sprite sheet_10: 2144791205
+      boss enemy sprite sheet_11: 2066499086
+      boss enemy sprite sheet_12: 2097811333
+      boss enemy sprite sheet_13: 680830901
+      boss enemy sprite sheet_14: 1786846278
+      boss enemy sprite sheet_15: 1268942658
+      boss enemy sprite sheet_16: -1859103571
+      boss enemy sprite sheet_17: -852568273
+      boss enemy sprite sheet_18: -897620011
+      boss enemy sprite sheet_19: 764083177
+      boss enemy sprite sheet_2: 1184578385
+      boss enemy sprite sheet_20: -1373492577
+      boss enemy sprite sheet_21: -629390607
+      boss enemy sprite sheet_3: 427644968
+      boss enemy sprite sheet_4: 381448142
+      boss enemy sprite sheet_5: -742531107
+      boss enemy sprite sheet_6: 1646990436
+      boss enemy sprite sheet_7: -1543985736
+      boss enemy sprite sheet_8: 1158446901
+      boss enemy sprite sheet_9: -1579379588
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

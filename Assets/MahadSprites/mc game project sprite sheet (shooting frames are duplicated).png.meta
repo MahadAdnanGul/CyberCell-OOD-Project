@@ -1,0 +1,2433 @@
+fileFormatVersion: 2
+guid: d0a4446044909c345b5eaca98540525e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5070
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96734ecd5a726ba449d97a5672f11196
+      internalID: 1819352819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_1
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 5070
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e74b0a22634818742beccc9400163b6e
+      internalID: -1913551558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_2
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 5070
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 388ee4cbfaf8ef143b250699c60f2bf9
+      internalID: -648611469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_3
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 5070
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 531b4a6451cccb448a3bdea578febaa9
+      internalID: 608380619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_4
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 5070
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8a0c9c4dc9e2324887aec5036814188
+      internalID: 1009678479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4680
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aae1ca6b6acef6489f3f95cc16ac907
+      internalID: 1841035033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_6
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 4680
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acbcc4a29fe7b4748befa2b5a80e76d6
+      internalID: 892976017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_7
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 4680
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69ba78146e25f6548993c33b3dd4076c
+      internalID: 1754738003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_8
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 4680
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a1a2152ac467b545a5594dae86ae412
+      internalID: -1465479521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_9
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 4680
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e542c15f774a8424eac289eec8d0a6a3
+      internalID: -1966500933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4290
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d4bb8a820fef74faf6af42e496e93e
+      internalID: -1750914574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_11
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 4290
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a7761e1e85d1074ba0260b05a27d61d
+      internalID: -1846933398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_12
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 4290
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 866879473772e2646a4779ad3823a3a5
+      internalID: 338553094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_13
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 4290
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f8f0720f19cc384cbe3a3db39838b21
+      internalID: -2102283468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_14
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 4290
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 426bcdadcd122ea459a65f0adda47b04
+      internalID: 773140612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_15
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 4290
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a41635f9ac734449b5b932c0a4a8333
+      internalID: -315049180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3900
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f3a17decae2d5044a93af5f4bed7ae5
+      internalID: 225197419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_17
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 3900
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46fc60d585283904e943e15f057c221f
+      internalID: -1583517686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_18
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 3900
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 070b953ad67ee7142848918c6c2b8676
+      internalID: 709707193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_19
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 3900
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc82c6e6269024d4abb06d45c91b5bbe
+      internalID: 1340881227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_20
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 3900
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c817ee4b41779848847cd17c256fbd8
+      internalID: 2140720851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_21
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 3900
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ba08a4ba324c547a4443ca8fd4f267
+      internalID: 722491895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3510
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 928742001ddac804ba24407100cec871
+      internalID: -372133165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_23
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 3510
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69edbf719ba44904084a12fd2ac1e7fa
+      internalID: 1239938461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_24
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 3510
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d15567ec04c1c43a6ec1f2742bcd8a
+      internalID: -1178286622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_25
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 3510
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfb87f1c2c3407a4c8fa4300d01eaa81
+      internalID: 1686411100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_26
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 3510
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31438867145b5dc42adf6a5735a6be4a
+      internalID: 2037581631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_27
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 3510
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d928c94493f1c64980e8aea1c8cfb93
+      internalID: 1650434446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_28
+      rect:
+        serializedVersion: 2
+        x: 2370
+        y: 3510
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d214c87f22b1df4187be8dccdc4afa6
+      internalID: 985484862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_29
+      rect:
+        serializedVersion: 2
+        x: 2765
+        y: 3510
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60b186b5d358d644495fe1a3fac12700
+      internalID: 603666632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3120
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a7b5b2a632c294794492246bb66a73
+      internalID: 1372974616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_31
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 3120
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a184c9c19fc2b4db0c0426c4d11f54
+      internalID: 815789691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_32
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 3120
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e6189e05768960468f7dbff0b8cf691
+      internalID: -204329366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_33
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 3120
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1034181a96dc740a8ff937b497a307
+      internalID: -1257700694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2730
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c872837772986b54c92e90500782c063
+      internalID: -953813385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_35
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 2730
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3fd70355be27f044bc657bbfbc466dd
+      internalID: 277671900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_36
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 2730
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54bbdb4199b7f364aad2e6cb301dbdc5
+      internalID: 85093865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_37
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 2730
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113fc1ea934fc3b4aa859e02ebdd593b
+      internalID: 248088344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_38
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 2730
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 843cfeb1167a37e4fae519bd74098640
+      internalID: 1332271637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_39
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 2730
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d205a97002d26d42b24ac32f0133c69
+      internalID: 713053151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_40
+      rect:
+        serializedVersion: 2
+        x: 2370
+        y: 2730
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3be01189e19508b47bcb45869a3fb28a
+      internalID: -406112909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_41
+      rect:
+        serializedVersion: 2
+        x: 2765
+        y: 2730
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db3220f0fc4513c45b7fba003b0c3f9c
+      internalID: 1504946524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_42
+      rect:
+        serializedVersion: 2
+        x: 3160
+        y: 2730
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62fbd1b4f8cc9cd438feb997b6933595
+      internalID: 1631720573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_43
+      rect:
+        serializedVersion: 2
+        x: 3555
+        y: 2730
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9e452b50ee5c2e45a567b6f1464ad9c
+      internalID: 1799167138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_44
+      rect:
+        serializedVersion: 2
+        x: 3950
+        y: 2730
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe070a79e58d71c47812f91262d4c108
+      internalID: 146373216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2340
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f8c3b97ba99b374ea3fe8c673f2b1e0
+      internalID: 138853435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_46
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 2340
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 868ae39ac3022dd43864ecb8c72e630e
+      internalID: 1811699655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_47
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 2340
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3248d8666d580dc4ca3dd26e2601fced
+      internalID: -406507681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_48
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 2340
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a7d658dbad6a54586aca1fa8c7cf2f
+      internalID: 1293313698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_49
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 2340
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c8c4c5922a7b674495ed57d7e3a97d8
+      internalID: -1395029381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1950
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a898aa4a74b7e1249b5637342806d2f1
+      internalID: 361669594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_51
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 1950
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f39606042889bc64dbe754d9f2b24f28
+      internalID: -1449222801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_52
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 1950
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f8bafb40db6c674eae045e0f9cf19df
+      internalID: 1676430313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_53
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 1950
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d77567eaa6874764e8227f809f1c85fd
+      internalID: -1306876868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_54
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 1950
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87741faabf2e171469dea7b8b096273f
+      internalID: 849676246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_55
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 1950
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a744df3244400054c9eafc7c8453fef7
+      internalID: -1115620942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1560
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f112b917074a11419ed7c426126a535
+      internalID: -1852226804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_57
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 1560
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daebd7d18ff782e47b5cb524c7a347f3
+      internalID: -1020369602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_58
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 1560
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd211c753f075464e99644bd5d19fcb2
+      internalID: -518024529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_59
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 1560
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbbc7787c80c1784fb4b20744b656290
+      internalID: 365860450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1170
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdce1d1016b9ca44c9c05b828ac8a841
+      internalID: 1411162201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_61
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 1170
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2428262426f8b34588acd07ffa97758
+      internalID: 423724774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_62
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 1170
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb13374f0e036a4f9f416143ad3213c
+      internalID: 1495804713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_63
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 1170
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16f20d27ca8896c4ab1deb910060aacf
+      internalID: 1660674571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_64
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 1170
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0fcfc75e4fc494499cca5336fbc7a82
+      internalID: 1398257531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_65
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 1170
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4dce9566be385f408af3caa280a06a0
+      internalID: -656169662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_66
+      rect:
+        serializedVersion: 2
+        x: 2370
+        y: 1170
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c897ba6f0c8fb294ab93314fa3ff3b0e
+      internalID: -311376476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_67
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 780
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7440f731cffdf644e99e7ec73decb88b
+      internalID: 1234244402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_68
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 780
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d55112068be7b9f4a8bb61d35e9ac425
+      internalID: 444815550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_69
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 780
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f24969ce9d433114780696d2c371f788
+      internalID: 1824097613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_70
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 780
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d19422f4a6a33614aa156b9f88cf9dd9
+      internalID: -556221519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_71
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 780
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1303724c8c32d147825f5fc14ad8996
+      internalID: -1991542223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_72
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 780
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72fcae1975a750a4d89f31a5bbc15683
+      internalID: -209485114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_73
+      rect:
+        serializedVersion: 2
+        x: 2370
+        y: 780
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7545b9b4e57b1f64b8eabeee6a1aaf05
+      internalID: -1665004204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_74
+      rect:
+        serializedVersion: 2
+        x: 2765
+        y: 780
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 717c3255ccf56ce46af35e5d5b5bbcab
+      internalID: -389581236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_75
+      rect:
+        serializedVersion: 2
+        x: 3160
+        y: 780
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a524302b7a67d049a8b9ff847114fab
+      internalID: -659450038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_76
+      rect:
+        serializedVersion: 2
+        x: 3555
+        y: 780
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1f6d038f178dc945862f86fc3d874c7
+      internalID: 451992569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_77
+      rect:
+        serializedVersion: 2
+        x: 3950
+        y: 780
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e445bcc29c96ec4096b64cb32d2ecc1
+      internalID: 2138809698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_78
+      rect:
+        serializedVersion: 2
+        x: 4345
+        y: 780
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cab9d3196ec1da84a8dcc6d5b4860e4b
+      internalID: 1847085683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_79
+      rect:
+        serializedVersion: 2
+        x: 4740
+        y: 780
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d8e7af075f17974f88d35022ab44c75
+      internalID: 746799051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_80
+      rect:
+        serializedVersion: 2
+        x: 5135
+        y: 780
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ad67f6a49fa0044ac23efc08f39d85
+      internalID: 109588226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_81
+      rect:
+        serializedVersion: 2
+        x: 5530
+        y: 780
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff834e30f2546f448b73ee8ff45945d5
+      internalID: 951057227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_82
+      rect:
+        serializedVersion: 2
+        x: 5925
+        y: 780
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b670cd6742c79b40bf3b22054e53755
+      internalID: -1612153863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_83
+      rect:
+        serializedVersion: 2
+        x: 6320
+        y: 780
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a009b517cd92342be8cbaa6f59936e
+      internalID: -603184827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_84
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 390
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff96141c52d50ae4cb5a5b56ed653720
+      internalID: -1414853724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_85
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 390
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc868565c0f6aa408da6770823db69d
+      internalID: -1494273355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_86
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 390
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdf7201e5288dd2449428c959172ec78
+      internalID: 213666231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_87
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 390
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e735421247b6a40897cde2d1ea5087
+      internalID: 285536396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_88
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 390
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45fbc79aeffef13439f1598aee6f4955
+      internalID: -793292029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_89
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 390
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79eefb92522567f42a432c23390bcbe9
+      internalID: -280387945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_90
+      rect:
+        serializedVersion: 2
+        x: 2370
+        y: 390
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1ceb9e45a208b44ea530e03ff403e77
+      internalID: 605123358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_91
+      rect:
+        serializedVersion: 2
+        x: 2765
+        y: 390
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e459cbef0ac3d3f4f9e636278f6e53bc
+      internalID: 1446004149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_92
+      rect:
+        serializedVersion: 2
+        x: 3160
+        y: 390
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a097954aa4c50eb4c9a0f1dcc457db65
+      internalID: -862253464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_93
+      rect:
+        serializedVersion: 2
+        x: 3555
+        y: 390
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac41ab4e5edbabe4eb61e019e7482fa4
+      internalID: -742364289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_94
+      rect:
+        serializedVersion: 2
+        x: 3950
+        y: 390
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9fe6806340a4eb47bb800ed1c2ba35b
+      internalID: 2004201635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_95
+      rect:
+        serializedVersion: 2
+        x: 4345
+        y: 390
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 341f73d44f35d7b4bb09eaf3449c7cdc
+      internalID: -67248872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ef857cdb503cf4e8042d0a5241a0e5
+      internalID: -1354080302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_97
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 0
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76d336cff8eed894897ffe315ae962d7
+      internalID: 120749225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_98
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 0
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d8b0f2a3a70ff048981df8cc62f3203
+      internalID: 640157074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_99
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 0
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa3fd25d8dc06c5428e27220cfa39e3f
+      internalID: -1077366747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_100
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 0
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f79efd09c6af0a4d8231d68ed49c503
+      internalID: 727050064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_101
+      rect:
+        serializedVersion: 2
+        x: 1975
+        y: 0
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e11892e9bf1344dbe5a8aacf1cbb29
+      internalID: 432600234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_102
+      rect:
+        serializedVersion: 2
+        x: 2370
+        y: 0
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0efb31bebadbced479b0a5f791e72d7f
+      internalID: 458777697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_103
+      rect:
+        serializedVersion: 2
+        x: 2765
+        y: 0
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c95cf695898f7041bce6cabb06650a2
+      internalID: 788799684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc game project sprite sheet (shooting frames are duplicated)_104
+      rect:
+        serializedVersion: 2
+        x: 3160
+        y: 0
+        width: 395
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa77851e8bfd5f84e8f79ca72e75d32a
+      internalID: -1701757746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      mc game project sprite sheet (shooting frames are duplicated)_0: 1819352819
+      mc game project sprite sheet (shooting frames are duplicated)_1: -1913551558
+      mc game project sprite sheet (shooting frames are duplicated)_10: -1750914574
+      mc game project sprite sheet (shooting frames are duplicated)_100: 727050064
+      mc game project sprite sheet (shooting frames are duplicated)_101: 432600234
+      mc game project sprite sheet (shooting frames are duplicated)_102: 458777697
+      mc game project sprite sheet (shooting frames are duplicated)_103: 788799684
+      mc game project sprite sheet (shooting frames are duplicated)_104: -1701757746
+      mc game project sprite sheet (shooting frames are duplicated)_11: -1846933398
+      mc game project sprite sheet (shooting frames are duplicated)_12: 338553094
+      mc game project sprite sheet (shooting frames are duplicated)_13: -2102283468
+      mc game project sprite sheet (shooting frames are duplicated)_14: 773140612
+      mc game project sprite sheet (shooting frames are duplicated)_15: -315049180
+      mc game project sprite sheet (shooting frames are duplicated)_16: 225197419
+      mc game project sprite sheet (shooting frames are duplicated)_17: -1583517686
+      mc game project sprite sheet (shooting frames are duplicated)_18: 709707193
+      mc game project sprite sheet (shooting frames are duplicated)_19: 1340881227
+      mc game project sprite sheet (shooting frames are duplicated)_2: -648611469
+      mc game project sprite sheet (shooting frames are duplicated)_20: 2140720851
+      mc game project sprite sheet (shooting frames are duplicated)_21: 722491895
+      mc game project sprite sheet (shooting frames are duplicated)_22: -372133165
+      mc game project sprite sheet (shooting frames are duplicated)_23: 1239938461
+      mc game project sprite sheet (shooting frames are duplicated)_24: -1178286622
+      mc game project sprite sheet (shooting frames are duplicated)_25: 1686411100
+      mc game project sprite sheet (shooting frames are duplicated)_26: 2037581631
+      mc game project sprite sheet (shooting frames are duplicated)_27: 1650434446
+      mc game project sprite sheet (shooting frames are duplicated)_28: 985484862
+      mc game project sprite sheet (shooting frames are duplicated)_29: 603666632
+      mc game project sprite sheet (shooting frames are duplicated)_3: 608380619
+      mc game project sprite sheet (shooting frames are duplicated)_30: 1372974616
+      mc game project sprite sheet (shooting frames are duplicated)_31: 815789691
+      mc game project sprite sheet (shooting frames are duplicated)_32: -204329366
+      mc game project sprite sheet (shooting frames are duplicated)_33: -1257700694
+      mc game project sprite sheet (shooting frames are duplicated)_34: -953813385
+      mc game project sprite sheet (shooting frames are duplicated)_35: 277671900
+      mc game project sprite sheet (shooting frames are duplicated)_36: 85093865
+      mc game project sprite sheet (shooting frames are duplicated)_37: 248088344
+      mc game project sprite sheet (shooting frames are duplicated)_38: 1332271637
+      mc game project sprite sheet (shooting frames are duplicated)_39: 713053151
+      mc game project sprite sheet (shooting frames are duplicated)_4: 1009678479
+      mc game project sprite sheet (shooting frames are duplicated)_40: -406112909
+      mc game project sprite sheet (shooting frames are duplicated)_41: 1504946524
+      mc game project sprite sheet (shooting frames are duplicated)_42: 1631720573
+      mc game project sprite sheet (shooting frames are duplicated)_43: 1799167138
+      mc game project sprite sheet (shooting frames are duplicated)_44: 146373216
+      mc game project sprite sheet (shooting frames are duplicated)_45: 138853435
+      mc game project sprite sheet (shooting frames are duplicated)_46: 1811699655
+      mc game project sprite sheet (shooting frames are duplicated)_47: -406507681
+      mc game project sprite sheet (shooting frames are duplicated)_48: 1293313698
+      mc game project sprite sheet (shooting frames are duplicated)_49: -1395029381
+      mc game project sprite sheet (shooting frames are duplicated)_5: 1841035033
+      mc game project sprite sheet (shooting frames are duplicated)_50: 361669594
+      mc game project sprite sheet (shooting frames are duplicated)_51: -1449222801
+      mc game project sprite sheet (shooting frames are duplicated)_52: 1676430313
+      mc game project sprite sheet (shooting frames are duplicated)_53: -1306876868
+      mc game project sprite sheet (shooting frames are duplicated)_54: 849676246
+      mc game project sprite sheet (shooting frames are duplicated)_55: -1115620942
+      mc game project sprite sheet (shooting frames are duplicated)_56: -1852226804
+      mc game project sprite sheet (shooting frames are duplicated)_57: -1020369602
+      mc game project sprite sheet (shooting frames are duplicated)_58: -518024529
+      mc game project sprite sheet (shooting frames are duplicated)_59: 365860450
+      mc game project sprite sheet (shooting frames are duplicated)_6: 892976017
+      mc game project sprite sheet (shooting frames are duplicated)_60: 1411162201
+      mc game project sprite sheet (shooting frames are duplicated)_61: 423724774
+      mc game project sprite sheet (shooting frames are duplicated)_62: 1495804713
+      mc game project sprite sheet (shooting frames are duplicated)_63: 1660674571
+      mc game project sprite sheet (shooting frames are duplicated)_64: 1398257531
+      mc game project sprite sheet (shooting frames are duplicated)_65: -656169662
+      mc game project sprite sheet (shooting frames are duplicated)_66: -311376476
+      mc game project sprite sheet (shooting frames are duplicated)_67: 1234244402
+      mc game project sprite sheet (shooting frames are duplicated)_68: 444815550
+      mc game project sprite sheet (shooting frames are duplicated)_69: 1824097613
+      mc game project sprite sheet (shooting frames are duplicated)_7: 1754738003
+      mc game project sprite sheet (shooting frames are duplicated)_70: -556221519
+      mc game project sprite sheet (shooting frames are duplicated)_71: -1991542223
+      mc game project sprite sheet (shooting frames are duplicated)_72: -209485114
+      mc game project sprite sheet (shooting frames are duplicated)_73: -1665004204
+      mc game project sprite sheet (shooting frames are duplicated)_74: -389581236
+      mc game project sprite sheet (shooting frames are duplicated)_75: -659450038
+      mc game project sprite sheet (shooting frames are duplicated)_76: 451992569
+      mc game project sprite sheet (shooting frames are duplicated)_77: 2138809698
+      mc game project sprite sheet (shooting frames are duplicated)_78: 1847085683
+      mc game project sprite sheet (shooting frames are duplicated)_79: 746799051
+      mc game project sprite sheet (shooting frames are duplicated)_8: -1465479521
+      mc game project sprite sheet (shooting frames are duplicated)_80: 109588226
+      mc game project sprite sheet (shooting frames are duplicated)_81: 951057227
+      mc game project sprite sheet (shooting frames are duplicated)_82: -1612153863
+      mc game project sprite sheet (shooting frames are duplicated)_83: -603184827
+      mc game project sprite sheet (shooting frames are duplicated)_84: -1414853724
+      mc game project sprite sheet (shooting frames are duplicated)_85: -1494273355
+      mc game project sprite sheet (shooting frames are duplicated)_86: 213666231
+      mc game project sprite sheet (shooting frames are duplicated)_87: 285536396
+      mc game project sprite sheet (shooting frames are duplicated)_88: -793292029
+      mc game project sprite sheet (shooting frames are duplicated)_89: -280387945
+      mc game project sprite sheet (shooting frames are duplicated)_9: -1966500933
+      mc game project sprite sheet (shooting frames are duplicated)_90: 605123358
+      mc game project sprite sheet (shooting frames are duplicated)_91: 1446004149
+      mc game project sprite sheet (shooting frames are duplicated)_92: -862253464
+      mc game project sprite sheet (shooting frames are duplicated)_93: -742364289
+      mc game project sprite sheet (shooting frames are duplicated)_94: 2004201635
+      mc game project sprite sheet (shooting frames are duplicated)_95: -67248872
+      mc game project sprite sheet (shooting frames are duplicated)_96: -1354080302
+      mc game project sprite sheet (shooting frames are duplicated)_97: 120749225
+      mc game project sprite sheet (shooting frames are duplicated)_98: 640157074
+      mc game project sprite sheet (shooting frames are duplicated)_99: -1077366747
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
