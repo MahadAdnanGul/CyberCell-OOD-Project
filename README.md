@@ -8,6 +8,16 @@ Presentation: https://docs.google.com/presentation/d/1385mQSgVn3JX_64dsCFmFqkU3f
 
 Build: https://drive.google.com/drive/folders/1yicElzTdcgWH_R2_OYRRKinuuQWSrUwQ?usp=sharing
 
+Controls: 
+
+A,D keys for movement
+Space to jump
+LShift to dash
+Enter to Melee
+RShift to Shoot
+X to Super Attack
+up and down arrow to lookup/lookdown
+
 ------------------Part A----------------------------
  
 UML Diagrams: https://docs.google.com/document/d/1On6RE6m1M02dWJQZdRaXZZ5X-2QQm5oteGsmsShGV6w/edit
